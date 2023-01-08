@@ -6,7 +6,7 @@ url_pathway = "".join(pathway)
 os.chdir(url_pathway)
 
 while True:
-    action = input("choose action (dir, cd , cd.. , mkdir , rmdir, rename, 0): ")
+    action = input("choose action (dir, cd , cd.. , mkdir , rmdir, rename, open, 0): ")
     # print(action)
     if action == "0":
         break
@@ -49,3 +49,13 @@ while True:
         name_of_dir = input("Dir name: ")  # вводится имя папки для переименования
         new_name_of_dir = input("New Dir name: ")  # вводится новое имя папки для переименования
         os.rename(name_of_dir, new_name_of_dir)
+
+    #  просмотр файлов как .txt, .md
+    elif action == "open":
+        name_of_file = input("File name: ")  # вводится имя файла для просмотра
+        try:
+            file = open(name_of_file)
+            print(file.read())
+            file.close()
+        except Exception:
+            print("error")
