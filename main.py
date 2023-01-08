@@ -58,4 +58,5 @@ while True:
             print(file.read())
             file.close()
         except Exception:
-            print("error")
+            print("incorrect file name")
+
