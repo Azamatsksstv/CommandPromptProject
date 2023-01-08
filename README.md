@@ -29,3 +29,5 @@ here you can see examples of view .txt, .md files with command 'open'
 
 finished with '0'
 ![image](https://user-images.githubusercontent.com/90980633/211194923-73ea6dd9-aa4d-4881-b3a4-22b495fdcabc.png)
+
+
